@@ -9,8 +9,7 @@ func main() {
 	fmt.Println(pi(5000))
 }
 
-// pi launches n goroutines to compute an
-// approximation of pi.
+
 func pi(n int) float64 {
 	ch := make(chan float64)
 	for k := 0; k <= n; k++ {
